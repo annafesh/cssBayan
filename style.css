@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F8FF;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+img {
+    height: 60vh;
+    width: 60vh;
+    margin: 3vh;
+}
+
+/* responsive - mobile */
+
+@media screen and (min-width: 320px) and (min-height: 568px) {
+
+}
+
+/* responsive - tablet */
+
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+
+}
+
+/* responsive - desktop */
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+
+}
+
+
