@@ -1,0 +1,160 @@
+/* responsive - desktop */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F8FF;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    display: block;
+    height: 80vh;
+    width: 90vh;
+    margin: 6vh auto;
+}
+
+::selection {
+    background: rgba(18, 17, 17, 0.783);
+}
+
+.content {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 100%;
+    padding: 0 7vh;
+    align-items: center;
+}
+
+.wrapper .parent-tab {
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .parent-tab label {
+    background: #A9A9A9;
+    padding: 2vh 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 1vh;
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s ease;
+
+}
+.wrapper .parent-tab label:hover{
+    background: #060000;
+}
+
+.parent-tab input:checked ~ label{
+    border-radius: 1vh 1vh 0 0;
+    background: #454545;
+}
+
+.wrapper label span{
+    color: #fff;
+    font-size: 4vh;
+    font-weight: 300;
+    text-shadow: 0 -0.5vh 0.5vh #201f1f;
+}
+
+.parent-tab label .icon{
+    position: relative;
+    height: 7vh;
+    width: 7vh;
+    font-size: 5vh;
+    color: #3f3f3f;
+    display: block;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.parent-tab label .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked ~ label .icon i::before {
+    content: '◉';
+    display: block;
+    font-weight: 900;
+}
+
+.wrapper .parent-tab .content{
+    max-height: 0vh;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 0 1vh 1vh;
+    transition: all 0.4s ease;
+}
+
+.parent-tab input:checked ~ .content{
+    max-height: 100vh;
+}
+
+.parent-tab .content p{
+    padding: 1.5vh 2vh;
+    font-size: 7vh;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    display: none;
+}
+
+/* responsive - mobile */
+
+@media screen and (min-width: 320px) and (min-height: 568px) {
+    body {
+        font-size: 0.9vh;
+    }
+
+    .container {
+        padding: 0.5%;
+        width: 90%;
+    }
+
+    img{
+        max-height: 90%;
+        max-width: 90%;
+    }
+}
+
+/* responsive - tablet */
+
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+    body {
+        font-size: 1.1vh;
+    }
+    
+    .container {
+        padding: 0 10%;
+        width: 80%;
+    }
+
+    img{
+        max-width: 70%;
+    }
+}
+
+
